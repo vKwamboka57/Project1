@@ -49,6 +49,7 @@ h1,h2,h3{
     text-align: center;
     line-height: 1.2;
     letter-spacing: -2px;
+    font-weight:700;
 }
 h1{
     font-size:6.2rem;
@@ -69,17 +70,21 @@ span{
     display:inline-block;
 }
 p,a{
+    font-weight:400;
     line-height: 1.5;
 }
 p{
     color:var(--primary-tint);
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 a{
     display:inline-block;
     text-decoration: none;
-    font-size:1.6rem;
+    font-size:1.8rem;
+}
+a:link,a:visited,a:hover,a:active{
+    color:var(--primary-tint);
 }
 .small-text{
     font-size:1.2rem;
@@ -95,11 +100,17 @@ ul{
     width:90%;
     margin:0 auto;
 }
+.main-logo{
+    width:270px;
+}
+.logo{
+    width:200px;
+}
 
-.header{
+/* .header{
     min-height:800px;
     height: 100vh;
-}
+} */
 
 
 /* navigation bar */
@@ -148,6 +159,7 @@ ul{
     flex-direction: column;
     align-items: center;
     margin-bottom: 15rem;
+    height:calc(100vh - 100px)
 
 }
 .hero-title{
@@ -180,41 +192,64 @@ ul{
 .features-section{
     margin-bottom: 20rem;
 }
+.features-heading{
+    margin-bottom: 7rem;
+}
 
 .features-img{
     max-width:350px;
     width:100%;
+    display: inline-block;
+}
+
+.features-grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10rem;
+    column-gap: 7rem;
+    justify-items: center;
+    align-items: center;
+}
+.features-swap1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.features-swap2{
+    grid-row: 4/5;
+    grid-column: 1/2;
 }
 
 /* cta-section */
 
 .cta-section{
     text-align: center;
-    /* display:flex;
-    justify-content: center; */
+    display:flex;
+    justify-content: center;
     margin-bottom: 20rem;
 
 }
 
 .cta-card{
+
     /* display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center; */
     max-width:1000px;
     padding:10rem 20rem;
-    margin:0 auto;
+    /* margin:0 auto; */
     text-align: center;
     border-radius: 1.2rem;
     background: var(--secondary-base);
 }
 
 .cta-card h2{
-    color:var(--primary-base);
+    color: var(--white);
     margin-bottom: 2rem;
 }
 
 .cta-btn{
-    color:var(--white);
+    color: var(--primary-base);
     background: var(--tetiary-tint);
 }
 .cta-btn:hover,.cta-btn:active{
@@ -232,11 +267,15 @@ ul{
     display:flex;
     gap:1.5rem;
 }
-
+.social-icons img{
+    width:25px;
+}
 .footer-links{
     display: flex;
     gap: 1.5rem;
 }
+
+
 
 
 

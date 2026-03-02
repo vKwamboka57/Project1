@@ -1,0 +1,71 @@
+/* Large screens its already covered */
+/* below 1200px */
+@media(max-width:75rem){
+    html{
+        font-size:56.25%;
+    }
+    .hero-section {
+        height: auto;
+    }
+}
+
+/* below 782px */
+@media(max-width:48.75rem){
+    html{
+        font-size:50%;
+    }
+    
+    .cta-card{
+        padding:9rem 9rem;
+    }
+}
+/* below 672px */
+@media(max-width:42rem){
+    html{
+        font-size:43.25%;
+    }
+}
+/* screen size below 600px */
+@media(max-width:37.5rem){
+    html{
+        font-size:37.5%;
+    }
+    
+    
+    .features-grid-container{
+        row-gap: 7rem;
+        column-gap: 4rem;
+    }
+    .cta-card{
+        padding:8rem 6rem;
+    }
+
+}
+/* screen size below 496px */
+@media(max-width:31rem){
+    html{
+        /* font size 5px */
+        font-size:31.25%;
+    }
+    .main-logo{
+        width:150px;
+    }
+    .logo{
+        width:120px;
+    }
+    .social-icons img{
+        width:20px;
+    }
+    
+    .features-grid-container{
+        grid-template-columns: 1fr;
+    }
+    .features-swap1{
+        grid-row:auto;
+        grid-column: auto;
+    }
+    .features-swap2 {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
